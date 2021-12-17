@@ -124,10 +124,25 @@ def getWinner(board, player):
                     if board[row][col] == player.item:
                         consec += 1
                         
-                        print(col)
+                        
                         if consec == 4:
                             return player.name
                     col += 1
+                    row += 1
+                #reset the params
+                col = j
+                row = i
+                consec = 0
+                #down left
+                while col > 0 and row < rows:
+                    
+                    if board[row][col] == player.item:
+                        consec += 1
+                        
+                        
+                        if consec == 4:
+                            return player.name
+                    col -= 1
                     row += 1
     return None
     #diagonal
