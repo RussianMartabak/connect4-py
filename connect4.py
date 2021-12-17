@@ -7,7 +7,7 @@ def main():
     reset = '\u001b[0m'
     lightBlue = '\u001b[38;5;39m'
     print(green + 'Mom can we have connect4 at home? \nConnect4 at home: \nCopyright Sean Software 2021\n' + reset)
-    print('Player1 will play as O\nPlayer2 will play as X\n')
+    print('Player1 will play as \u001b[31mO\u001b[0m\nPlayer2 will play as \u001b[34mX\u001b[0m\n')
 
     #ask for player's name 
     player1Name = input('Player 1 name: ')
