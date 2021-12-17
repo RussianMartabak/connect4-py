@@ -127,6 +127,8 @@ def getWinner(board, player):
                         
                         if consec == 4:
                             return player.name
+                    else:
+                        consec = 0
                     col += 1
                     row += 1
                 #reset the params
@@ -144,6 +146,8 @@ def getWinner(board, player):
                             return player.name
                     col -= 1
                     row += 1
+                    else:
+                        consec = 0
     return None
     #diagonal
     
